@@ -1,71 +1,29 @@
 # manimvs README
 
-This is the README for your extension "manimvs". After writing up a brief description, we recommend including the following sections.
+Yet another extension to add behavior that Grant used in the video regarding manimgGl
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Select a terminal in vscode where you are running `manimgl [s.py] [scene] -se [liineNumber]`
+- Copy things on your clipboard and run `checkpoint_paste()` on the selected terminal
+    - if cursor on comment: copy everything up until next comment or EOF
+    - if cursor has selection: copy first selection
+    - if cursor is on any python line (NOT comment): copy that line
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Install `manimgl` and run in a vscode managed terminal `manimgl [s.py] [scene] -se [liineNumber]`
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+It might be comfortable to setup a keybinding to run the checkpoint command, which is:
+- manimvs.onCursorCheckpointPaste
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Please be sure to select a terminal within vscode which is already running `manimgl [s.py] [scene] -se [liineNumber]`
 
-## Release Notes
+## Comments
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+If you want to contribute, the extension is incredibly small and easy to get into. To be honest, this has been a good excuse for me
+to make my first vscode extension.
