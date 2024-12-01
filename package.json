@@ -14,8 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "manimvs.helloWorld",
-        "title": "Hello World"
+        "command": "manimvs.onCursorCheckpointPaste",
+        "title": "ManimGl: On Cursor CheckpointPaste"
+      },
+      {
+        "command": "manimvs.selectTerminal",
+        "title": "ManimGl: Select Terminal"
       }
     ]
   },
