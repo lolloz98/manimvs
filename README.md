@@ -2,6 +2,8 @@
 
 Yet another extension to add behavior that Grant used in the video regarding manimgGl
 
+https://github.com/user-attachments/assets/9e03138e-11c3-4553-993c-0adc0ea7a8f5
+
 ## Features
 
 - Select a terminal in vscode where you are running `manimgl [s.py] [scene] -se [liineNumber]`
