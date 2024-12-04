@@ -2,7 +2,7 @@
   "name": "manimvs",
   "displayName": "manimvs",
   "description": "Helping to make manimgl easier to use",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "lolloz98",
   "engines": {
     "vscode": "^1.95.0"

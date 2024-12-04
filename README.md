@@ -12,6 +12,16 @@ https://github.com/user-attachments/assets/9e03138e-11c3-4553-993c-0adc0ea7a8f5
     - if cursor has selection: copy first selection
     - if cursor is on any python line (NOT comment): copy that line
 
+## How to use
+
+This extension exports two commands (you can find them with `ctrl + shift + p` or `cmd + shift + p`)
+- ManimGl: Select Terminal
+- ManimGl: On cursor CheckpointPaste
+
+Open a terminal with the vscode integrated terminal, run `manimgl [s.py] [scene] -se [liineNumber]`, then:
+- `ctrl + shift + p` -> `ManimGl: select Terminal`: you will need to select the name of the terminal where you are running the above command
+- go on a line of your code and run `ctrl + shift + p` -> `ManimGl: On cursor CheckpointPaste` to execute manim code
+
 ## Requirements
 
 Install `manimgl` and run in a vscode managed terminal `manimgl [s.py] [scene] -se [liineNumber]`
