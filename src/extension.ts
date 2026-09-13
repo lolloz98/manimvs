@@ -31,7 +31,6 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		const editor = vscode.window.activeTextEditor;
 		if (editor?.selection.isEmpty) {
-			if (terminal === null) {}
 			const startPosition = editor.selection.active;
 
 			const config = vscode.workspace.getConfiguration("manimvs");
