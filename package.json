@@ -2,7 +2,7 @@
   "name": "manimvs",
   "displayName": "manimvs",
   "description": "Helping to make manimgl easier to use",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "lolloz98",
   "engines": {
     "vscode": "^1.95.0"
@@ -22,7 +22,17 @@
         "command": "manimvs.selectTerminal",
         "title": "ManimGl: Select Terminal"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "ManimVS",
+      "properties": {
+        "manimvs.checkpointCommentPrefix": {
+          "type": "string",
+          "default": "",
+          "description": "If it's empty, all comments will be counted as checkpoints. But if there's a prefix added, then only comments in the form '# [PREFIX]' will be counted as a checkpoint"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

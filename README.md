@@ -6,9 +6,12 @@ https://github.com/user-attachments/assets/9e03138e-11c3-4553-993c-0adc0ea7a8f5
 
 ## Features
 
-- Select a terminal in vscode where you are running `manimgl [s.py] [scene] -se [liineNumber]`
+- Select a terminal in vscode where you are running `manimgl [s.py] [scene] -se [lineNumber]`
+- Comment checkpoints:
+    - by default, any comment counts as a checkpoint for manim scenes, but a prefix can be set
+    - this prefix will make comments only count as checkpoints if they're in the form "# [PREFIX]" followed by any other characters
 - Copy things on your clipboard and run `checkpoint_paste()` on the selected terminal
-    - if cursor on comment: copy everything up until next comment or EOF
+    - if cursor on checkpoint comment: copy everything up until next checkpoint comment or EOF
     - if cursor has selection: copy first selection
     - if cursor is on any python line (NOT comment): copy that line
 
@@ -30,6 +33,9 @@ Install `manimgl` and run in a vscode managed terminal `manimgl [s.py] [scene] -
 
 It might be comfortable to setup a keybinding to run the checkpoint command, which is:
 - manimvs.onCursorCheckpointPaste
+
+To set the checkpoint prefix, change the setting:
+- manimvs.checkpointCommentPrefix
 
 ## Known Issues
 
