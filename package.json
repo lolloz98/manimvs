@@ -30,7 +30,7 @@
           "type": "string",
           "default": "",
           "description": "If it's empty, all comments will be counted as checkpoints. But if there's a prefix added, then only comments in the form '# [PREFIX]' will be counted as a checkpoint"
-        },
+        }
       },
     }
   },
